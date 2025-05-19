@@ -221,19 +221,19 @@
 <h4 id="1-detect-series-connections">1. Detect Series Connections:</h4>
 <ul>
 <li>Nodes with <strong>degree 2</strong>, connecting only two resistors, are candidates.</li>
-<li>Combine resistors:<br/>
-  [
-  R_{eq} = R_1 + R_2
-  ]</li>
+<li>Combine resistors:</li>
 </ul>
+<div class="arithmatex">\[
+R_{\text{eq}} = R_1 + R_2
+\]</div>
 <h4 id="2-detect-parallel-connections">2. Detect Parallel Connections:</h4>
 <ul>
 <li><strong>Multiple edges</strong> between the same two nodes (parallel resistors).</li>
-<li>Combine using reciprocal rule:<br/>
-  [
-  \frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots
-  ]</li>
+<li>Combine using reciprocal rule:</li>
 </ul>
+<div class="arithmatex">\[
+\frac{1}{R_{\text{eq}}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots
+\]</div>
 <hr/>
 <h2 id="pseudocode-for-reduction">Pseudocode for Reduction</h2>
 <pre><code>function compute_equivalent_resistance(graph, node_start, node_end):
@@ -256,24 +256,24 @@
 <h2 id="example-1-simple-series">Example 1: Simple Series</h2>
 <pre><code>A --[2Ω]-- B --[3Ω]-- C
 </code></pre>
-<p><strong>Expected Result</strong>:<br/>
-[
-R_{eq} = 2 + 3 = 5 \Omega
-]</p>
+<p><strong>Expected Result</strong>:</p>
+<div class="arithmatex">\[
+R_{\text{eq}} = 2 + 3 = 5\, \Omega
+\]</div>
 <p><strong>Graph Output</strong>:<br/>
-<img alt="alt text" src="../series_example.png"/></p>
+<img alt="alt text" src="../series_example-1.png"/></p>
 <hr/>
 <h2 id="example-2-simple-parallel">Example 2: Simple Parallel</h2>
 <pre><code>A --[2Ω]-- B  
  \       
   \--[2Ω]--/
 </code></pre>
-<p><strong>Expected Result</strong>:<br/>
-[
-\frac{1}{R_{eq}} = \frac{1}{2} + \frac{1}{2} = 1 \Rightarrow R_{eq} = 1 \Omega
-]</p>
+<p><strong>Expected Result</strong>:</p>
+<div class="arithmatex">\[
+\frac{1}{R_{\text{eq}}} = \frac{1}{2} + \frac{1}{2} = 1 \Rightarrow R_{\text{eq}} = 1\, \Omega
+\]</div>
 <p><strong>Graph Output</strong>:<br/>
-<img alt="alt text" src="../parallel_example.png"/></p>
+<img alt="alt text" src="../parallel_example-1.png"/></p>
 <hr/>
 <h2 id="example-3-nested-configuration">Example 3: Nested Configuration</h2>
 <pre><code>      [2Ω]
@@ -281,13 +281,12 @@ R_{eq} = 2 + 3 = 5 \Omega
 A --        -- B
      \[3Ω]/
 </code></pre>
-<p><strong>Expected Result</strong>:<br/>
-Parallel:<br/>
-[
-\frac{1}{R} = \frac{1}{2} + \frac{1}{3} = \frac{5}{6} \Rightarrow R = 1.2 \Omega
-]</p>
+<p><strong>Expected Result</strong> (Parallel):</p>
+<div class="arithmatex">\[
+\frac{1}{R} = \frac{1}{2} + \frac{1}{3} = \frac{5}{6} \Rightarrow R = 1.2\, \Omega
+\]</div>
 <p><strong>Graph Output</strong>:<br/>
-<img alt="alt text" src="../nested_example.png"/></p>
+<img alt="alt text" src="../nested_example-1.png"/></p>
 <hr/>
 <h2 id="complexity-and-optimizations">Complexity and Optimizations</h2>
 <ul>
