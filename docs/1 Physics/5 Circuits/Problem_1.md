@@ -35,17 +35,19 @@ We aim to reduce the graph to a single edge between the source and ground (or an
 
 #### 1. Detect Series Connections:
 - Nodes with **degree 2**, connecting only two resistors, are candidates.
-- Combine resistors:  
-  \[
-  R_{eq} = R_1 + R_2
-  \]
+- Combine resistors:
+
+\[
+R_{\text{eq}} = R_1 + R_2
+\]
 
 #### 2. Detect Parallel Connections:
 - **Multiple edges** between the same two nodes (parallel resistors).
-- Combine using reciprocal rule:  
-  \[
-  \frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots
-  \]
+- Combine using reciprocal rule:
+
+\[
+\frac{1}{R_{\text{eq}}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots
+\]
 
 ---
 
@@ -79,13 +81,14 @@ We implement the algorithm using Python and the `networkx` library for graph man
 A --[2Ω]-- B --[3Ω]-- C
 ```
 
-**Expected Result**:  
+**Expected Result**:
+
 \[
-R_{eq} = 2 + 3 = 5 \Omega
+R_{\text{eq}} = 2 + 3 = 5\, \Omega
 \]
 
 **Graph Output**:  
-![alt text](series_example.png)
+![alt text](series_example-1.png)
 
 ---
 
@@ -97,13 +100,14 @@ A --[2Ω]-- B
   \--[2Ω]--/
 ```
 
-**Expected Result**:  
+**Expected Result**:
+
 \[
-\frac{1}{R_{eq}} = \frac{1}{2} + \frac{1}{2} = 1 \Rightarrow R_{eq} = 1 \Omega
+\frac{1}{R_{\text{eq}}} = \frac{1}{2} + \frac{1}{2} = 1 \Rightarrow R_{\text{eq}} = 1\, \Omega
 \]
 
 **Graph Output**:  
-![alt text](parallel_example.png)
+![alt text](parallel_example-1.png)
 
 ---
 
@@ -116,14 +120,14 @@ A --        -- B
      \[3Ω]/
 ```
 
-**Expected Result**:  
-Parallel:  
+**Expected Result** (Parallel):
+
 \[
-\frac{1}{R} = \frac{1}{2} + \frac{1}{3} = \frac{5}{6} \Rightarrow R = 1.2 \Omega
+\frac{1}{R} = \frac{1}{2} + \frac{1}{3} = \frac{5}{6} \Rightarrow R = 1.2\, \Omega
 \]
 
 **Graph Output**:  
-![alt text](nested_example.png)
+![alt text](nested_example-1.png)
 
 ---
 
