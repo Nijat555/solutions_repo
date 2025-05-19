@@ -74,19 +74,19 @@ We consider three different configurations of electric and magnetic fields:
 
 Trajectory: **Circular/Helical Motion**
 
-![Trajectory 1: Uniform Magnetic Field](attachment:image1.png)
+![alt text](trajectory_uniform_B.png)
 
 ### Case 2: Crossed Electric and Magnetic Fields
 
 Trajectory: **Helical Path + Drift (E × B)**
 
-![Trajectory 2: E × B Drift](attachment:image2.png)
+![alt text](trajectory_exb_drift.png)
 
 ### Case 3: Parallel Electric and Magnetic Fields
 
 Trajectory: **Accelerated Helix**
 
-![Trajectory 3: Parallel E and B](attachment:image3.png)
+![alt text](trajectory_parallel_eb.png)
 
 ## 5. Physical Interpretation and Application
 
