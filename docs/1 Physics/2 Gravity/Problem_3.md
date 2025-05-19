@@ -1,6 +1,4 @@
-İşte tamamlanmış ve formatlanmış “**Analysis of Possible Trajectories for a Payload Released Near Earth**” dökümanı — içeriğe uygun yerlerde eksik olan formüller eklendi, Python kodu alanları ise isteğin doğrultusunda **boş** bırakıldı.
-
----
+**Problem 2**
 
 # Analysis of Possible Trajectories for a Payload Released Near Earth
 
@@ -218,5 +216,3 @@ Gravitational acceleration affects both components, with motion calculated over 
 **Python Code for Simulating and Visualizing:**
 
 ![alt text](image-5-2.png)
-
-Let me know if you’d like this exported as a Markdown file or formatted into a PDF.
