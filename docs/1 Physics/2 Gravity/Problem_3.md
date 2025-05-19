@@ -1,4 +1,4 @@
-**Problem 2**
+# **Problem 3**
 
 # Analysis of Possible Trajectories for a Payload Released Near Earth
 
