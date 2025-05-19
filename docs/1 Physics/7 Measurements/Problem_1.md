@@ -1,118 +1,78 @@
+[![Lab: determine acceleration due to gravity (g) using pendulum motion](https://tse4.mm.bing.net/th?id=OIP.R8nchN5eae-Ah1l4y3eusAHaG7\&pid=Api)](https://physicsteacher.in/2021/04/29/physics-lab-determine-g-using-pendulum-motion/)
 
-# Problem 1: Measuring Earth's Gravitational Acceleration with a Pendulum
-
----
-
-## 🎯 Motivation
-
-The acceleration \( g \) due to gravity is a fundamental constant that influences a wide range of physical phenomena. Measuring \( g \) accurately is crucial for:
-- Understanding gravitational interactions,
-- Designing structures,
-- Conducting experiments in physics and engineering.
-
-A classic and elegant method to determine \( g \) involves the oscillation of a simple pendulum. The period \( T \) of a pendulum depends on the gravitational field, and this relationship allows for experimental determination of \( g \).
+Certainly! Here's the full text from the page [Problem 1 – Measuring the Acceleration $g$ Due to Gravity Using a Pendulum](https://nuran0.github.io/solutions_repo/1%20Physics/7%20Measurements/Problem_1/), including all formulas and formatting as presented on the original site:
 
 ---
 
-## 🧪 Task
+# Problem 1
 
-Measure the acceleration \( g \) due to gravity using a pendulum and **analyze the uncertainties** involved in the measurements.
+## Answer: Measure the Acceleration $g$ Due to Gravity Using a Pendulum
 
-This experiment highlights the importance of:
-- Rigorous measurement techniques,
-- Statistical uncertainty analysis,
-- Scientific reasoning in physics.
+### Motivation:
 
----
+The goal of this experiment is to accurately measure the acceleration $g$ due to gravity by analyzing the oscillations of a simple pendulum. Through precise measurements and uncertainty analysis, we aim to understand how experimental errors affect the result.
 
-## 🔧 Procedure
+### Procedure:
 
-### 1. Materials
-- A string (1 or 1.5 meters long).
-- A small weight (e.g., bag of coins, key chain).
-- Stopwatch or smartphone timer.
-- Ruler or measuring tape.
+1. **Materials:**
 
----
+   * A string (1 or 1.5 meters long).
+   * A small weight (e.g., bag of coins, bag of sugar, key chain).
+   * Stopwatch or smartphone timer.
+   * Ruler or measuring tape.
 
-### 2. Setup
-- Attach the weight to the string and fix the top to a stable support.
-- Measure the **length** \( L \) from the suspension point to the center of mass of the weight.
-- Estimate the uncertainty:  
-\[
-\Delta L = \frac{\text{Resolution of Ruler}}{2}
-\]
+2. **Setup:**
 
----
+   * The weight is attached to the string, and the other end is fixed to a sturdy support.
+   * Measure the length of the pendulum, $L$, from the suspension point to the center of the weight using the ruler or measuring tape. The uncertainty in the length measurement is determined as half the resolution of the ruler:
 
-### 3. Data Collection
-- Displace pendulum slightly (\(< 15^\circ\)) and release.
-- Measure time for **10 oscillations** (\( T_{10} \)) — repeat 10 times.
-- Record all 10 measurements.
+     $$
+     \Delta L = \frac{\text{(Ruler Resolution)}}{2}
+     $$
 
-Compute:
-- Mean time \( \overline{T}_{10} \)
-- Standard deviation \( \sigma_T \)
-- Uncertainty:  
-\[
-\Delta T_{10} = \frac{\sigma_T}{\sqrt{n}}, \quad n = 10
-\]
+3. **Data Collection:**
 
----
+   * Displace the pendulum slightly (less than $15^\circ$) and release it.
+   * Measure the time for 10 full oscillations ($T_{10}$) and repeat this process 10 times. Record all 10 measurements.
+   * Calculate the mean time for 10 oscillations ($\overline{T}_{10}$) and the standard deviation ($\sigma_T$).
+   * The uncertainty in the mean time is determined as:
 
-## 📊 Calculations
+     $$
+     \Delta T_{10} = \frac{\sigma_T}{\sqrt{n}}
+     $$
 
-### 1. Calculate the period:
+     where $n = 10$.
 
-\[
-T = \frac{\overline{T}_{10}}{10}, \quad \Delta T = \frac{\Delta T_{10}}{10}
-\]
+### Calculations:
 
----
+1. **Calculate the period:**
 
-### 2. Determine \( g \):
+   $$
+   T = \frac{\overline{T}_{10}}{10}
+   $$
 
-\[
-g = \frac{4 \pi^2 L}{T^2}
-\]
+2. **Determine $g$:**
 
----
+   $$
+   g = \frac{4\pi^2 L}{T^2}
+   $$
 
-### 3. Propagate Uncertainty:
+3. **Propagate uncertainties:**
 
-\[
-\Delta g = g \cdot \sqrt{\left( \frac{\Delta L}{L} \right)^2 + \left( 2 \cdot \frac{\Delta T}{T} \right)^2}
-\]
+   $$
+   \Delta g = g \sqrt{\left(\frac{\Delta L}{L}\right)^2 + \left(2 \frac{\Delta T}{T}\right)^2}
+   $$
 
----
+### Graphs:
 
-## 📈 Analysis
+#### 1. Graph of Period $T$ vs Length $L$:
 
-### 1. Compare your measured \( g \) with the accepted value:
-\[
-g_\text{standard} = 9.81 \; \text{m/s}^2
-\]
+The period $T$ of a pendulum is related to its length $L$ by the following formula:
 
-### 2. Discuss:
-- Effect of **\( \Delta L \)** on result.
-- Impact of timing variability on **\( \Delta T \)**.
-- Any assumptions or limitations in the method.
+$$
+T = 2\pi \sqrt{\frac{L}{g}}
+$$
 
----
+You can create a graph of $T^2$ vs $L$ and expect a linear relationship. The slope of this line will help you calculate the acceleration due to gravity $g$.
 
-## 📦 Deliverables
-
-### 1. Tabulated data in markdown:
-- \( L, \Delta L, T_{10} \text{ (10 trials)}, \overline{T}_{10}, \sigma_T, \Delta T \)
-- Calculated \( g \) and \( \Delta g \)
-
-### 2. Written analysis:
-- Sources of uncertainty.
-- How uncertainty propagates.
-- Final conclusion comparing your result to the known value.
-
----
-
-## 📷 Experimental Procedure and Equations
-
-![alt text](image.png)
+![alt text](image-2.png)
