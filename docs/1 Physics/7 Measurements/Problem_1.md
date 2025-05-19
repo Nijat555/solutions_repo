@@ -1,8 +1,3 @@
-[![Lab: determine acceleration due to gravity (g) using pendulum motion](https://tse4.mm.bing.net/th?id=OIP.R8nchN5eae-Ah1l4y3eusAHaG7\&pid=Api)](https://physicsteacher.in/2021/04/29/physics-lab-determine-g-using-pendulum-motion/)
-
-Certainly! Here's the full text from the page [Problem 1 – Measuring the Acceleration $g$ Due to Gravity Using a Pendulum](https://nuran0.github.io/solutions_repo/1%20Physics/7%20Measurements/Problem_1/), including all formulas and formatting as presented on the original site:
-
----
 
 # Problem 1
 
